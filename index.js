@@ -6,22 +6,22 @@ app.use(express.json());
 
 // GET request
 app.get('/get', (req, res) => {
-  res.json('GET request received');
+  res.json({'response': 'GET request received'});
 });
 
 // POST request
 app.post('/post', (req, res) => {
-  res.json('POST request received');
+  res.json({'response': 'POST request received'});
 });
 
 // PUT request
 app.put('/put', (req, res) => {
-  res.json('PUT request received');
+  res.json({'response': 'PUT request received'});
 });
 
 // DELETE request
 app.delete('/delete', (req, res) => {
-  res.json('DELETE request received');
+  res.json({'response': 'DELETE request received'});
 });
 
 app.listen(PORT, () => {
